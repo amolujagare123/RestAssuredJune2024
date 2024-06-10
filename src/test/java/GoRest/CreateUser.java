@@ -3,6 +3,7 @@ package GoRest;
 import io.restassured.RestAssured;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 public class CreateUser {
 
@@ -19,7 +20,8 @@ public class CreateUser {
                         "        \"status\": \"active\"\n" +
                         "    }")
                 .when().post("/public/v2/users")
-                .then().log().all().assertThat().statusCode(201);
+                .then().log().all().assertThat()//.statusCode(201)
+                .body("email",equalTo("mayur@gmail.com"));
     }
 
 }

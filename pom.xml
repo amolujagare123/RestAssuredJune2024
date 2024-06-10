@@ -20,7 +20,7 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
-      <scope>test</scope>
+     <!-- <scope>test</scope>-->
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
@@ -28,7 +28,7 @@
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
       <version>5.4.0</version>
-      <scope>test</scope>
+     <!-- <scope>test</scope>-->
     </dependency>
 
 
